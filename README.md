@@ -16,7 +16,7 @@ I built this project to practice the concepts I learned in Day 6 of the bootcamp
 
 ## 🚀 How to Run
 1.  Make sure you have Python installed.
-2.  Download the `main.py` file.
+2.  Download the `market-risk-simulator.py` file.
 3.  Run it in your terminal or editor (like PyCharm).
 4.  Enter your starting money and see if you can reach the target!
 
