@@ -1,0 +1,3 @@
+# No third-party dependencies — standard library only (Python 3.8+).
+# Listed explicitly so the project is reproducible from a clean environment:
+#   python3 market-risk-simulator.py
