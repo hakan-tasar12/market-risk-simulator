@@ -1,27 +1,39 @@
 # Market Risk Simulator 📈
 
-This is a simple text-based simulation tool I built using Python.
+An interactive command-line game: you start with some capital and have **5 years to
+double it**. Each year the market turns Bull, Bear, or Uncertain, and you choose
+**Aggressive** (buy) or **Defensive** (hold cash) — the payoff depends on whether your
+call matched the market.
 
-I am currently learning Python (Angela Yu's 100 Days of Code), and I wanted to combine my coding practice with my interest in Finance. This project simulates a volatile market where you have to decide between "Aggressive" and "Defensive" strategies.
+```text
+[ YEAR 1 OF 5 ]
+CURRENT BALANCE: $10000
+MARKET NEWS:  >> Tech Sector Rally. Prices are UP.
+CHOOSE STRATEGY:  [1] AGGRESSIVE   [2] DEFENSIVE
+>> RESULT: MARKET RALLY. HIGH RETURN. +$5000
+```
 
-## 🎯 Goal of the Project
-The goal is simple: You start with a capital (e.g., $10,000) and try to double it within 5 years. But be careful, the market changes every year (Bull, Bear, or Volatile)
+## Why
 
-## 🛠️ What I Used (Day 6 Concepts)
-I built this project to practice the concepts I learned in Day 6 of the bootcamp:
-* **While Loops:** To keep the simulation running until the time is up or money runs out.
-* **If/Elif/Else:** To create different market scenarios and outcomes.
-* **Functions:** I used `def run_simulation():` to organize my code.
-* **Random Module:** To generate random market events.
+I wanted to turn a basic control-flow exercise into something that models a real
+intuition: **risk and reward are conditional on the environment.** Aggressive wins big
+in a rally and loses hard in a crash; defensive preserves capital when things go bad
+but gives up the upside. I built it while learning Python (Angela Yu, 100 Days of Code).
 
-## 🚀 How to Run
-1.  Make sure you have Python installed.
-2.  Download the `market-risk-simulator.py` file.
-3.  Run it in your terminal or editor (like PyCharm).
-4.  Enter your starting money and see if you can reach the target!
+## Run
 
-## 📝 Note
-This is my first portfolio project. I know "Safe Mode" isn't a technical finance term, but I used logic similar to **Hedging** to protect the capital during bad market conditions.
+```bash
+python3 market-risk-simulator.py
+```
+
+No third-party packages — standard library only (Python 3.8+).
+
+## Scope & limitations
+
+- Market outcomes are uniform random draws, not calibrated to real return distributions.
+- Payoffs are fixed percentages, not sampled from historical volatility.
+- Integer-dollar rounding; no fees, slippage, or transaction costs.
+- A learning project and strategy game — not a real risk model, and not investment advice.
 
 ---
-*Created by Hakan*
+*Created by Hakan Taşar*
